@@ -11,7 +11,7 @@
       <p> Welcome ! The platform allows professionals to
         ship their merchandise across Europe in just a few clicks.
         Fill in your shipping need, get a fixed price and receive
-        more than 2,500 quality carriers on this page, you can compute
+        more than 2,500 quality carriers. On this page, you can compute
         the invoices in a clear and efficient manner </p>
 
       <h2>Informations </h2>
@@ -23,13 +23,18 @@
           <input class="name" type="text" />
         </p>
         <p>
-          <label> Price by km : </label>
+          <label> Price by kms : </label>
           <input class="price-by-km" type="number" />
+          <label> € </label>
         </p>
         <p>
           <label>Price by cubic : </label>
           <input class="price-by-cubic" type="number" />
+          <label> € </label>
         </p>
+        <div class="help">
+          <p> If you don't understand, there's <a href="help.html"> another page</a> to help you ! </p>
+        </div>
       </div>
 
 
@@ -41,21 +46,26 @@
           <input class="name" type="text" />
         </p>
         <p>
-          <label> Distance in km : </label>
+          <label> Distance : </label>
           <input class="distance" type="number" />
+          <label> kilometers </label>
         </p>
         <p>
-          <label> Volume in m3 : </label>
+          <label> Volume : </label>
           <input class="volume" type="number" />
+          <label> m3 </label>
         </p>
         <p>
+          <label> If you used the deductible option : click  </label>
           <input class="option" type="checkbox"/>
-          <label> Deductible option ? </label>
         </p>
+        <div class="help">
+          <p> If you don't understand, there's <a href="help.html"> another page</a> to help you ! </p>
+        </div>
       </div>
 
       <h2> Results </h2>
-      <p> Once you have saved all the information, click on COMPUTE to get the invoice figures. </p>
+      <p> Once you have saved all informations, click COMPUTE to get the invoice figures. </p>
       <button id="compute" class="button">COMPUTE</button>
       <div class="result">
         <div id="actors"></div>
