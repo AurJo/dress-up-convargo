@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
+    <meta charset='UTF-8'/>
     <title>CSS/HTML Workshop with Convargo</title>
+    <link rel='stylesheet' href='style.css'/>
   </head>
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+    <h1> Convargo </h1>
+    <p> Welcome, on this page, you can compute the invoices in a clear and efficient manner </p>
+
+    <h2>Informations </h2>
+
+    <h3> Trucker's informations </h3>
+    <div id="trucker" class="info">
+      <p>
+        <label> Trucker name : </label>
+        <input class="name" type="text" placeholder="Trucker name"/>
+      </p>
+      <p>
+        <label> Price by km : </label>
+        <input class="price-by-km" type="number" placeholder="Price by km"/>
+      </p>
+      <p>
+        <label>Price by cubic : </label>
+        <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+      </p>
     </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+
+
+
+    <h3> Shipper's informations </h3>
+    <div id="shipper" class="info">
+      <p>
+        <label> Shipper name : </label>
+        <input class="name" type="text" placeholder="Shipper name"/>
+      </p>
+      <p>
+        <label> Distance in km : </label>
+        <input class="distance" type="number" placeholder="Distance in km"/>
+      </p>
+      <p>
+        <label> Volume in m3 : </label>
+        <input class="volume" type="number" placeholder="Volume in m3"/>
+      </p>
+      <p>
+        <input class="option" type="checkbox" placeholder="Deductible option"/>
+        <label> Deductible option ? </label>
+      </p>
     </div>
+
+    <h2> Results </h2>
     <button id="compute">Compute</button>
     <div id="actors"></div>
     <script src="convargo.js"></script>
