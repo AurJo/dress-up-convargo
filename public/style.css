@@ -3,17 +3,51 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.page{
+  width: 600px;
+  margin: 0 auto;
+}
+
 h1{
   color: white;
   text-align: center;
 }
 
+h2{
+  padding-left: 32px;
+  text-align: left ;
+  text-decoration: underline;
+}
+
 h3{
   color: black;
   font-style: italic;
-  text-align: center;
+}
+p{
+  text-align: justify;
 }
 
 .info{
-  background-color : grey: 
+  padding-left: 18px;
+  padding-bottom: 12px;
+  background-color : grey;
+}
+
+.button{
+  color: #FFF;
+  background-color: #575B5C;
+
+  padding: 10px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+
+  width: 100px;
+  margin: 20px auto;
+}
+
+.result{
+  padding-left: 18px;
+  padding-bottom: 12px;
+  background-color : white;
 }

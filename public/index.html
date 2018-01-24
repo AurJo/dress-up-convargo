@@ -6,53 +6,63 @@
     <link rel='stylesheet' href='style.css'/>
   </head>
   <body>
-    <h1> Convargo </h1>
-    <p> Welcome, on this page, you can compute the invoices in a clear and efficient manner </p>
+    <div class="page">
+      <h1> Convargo </h1>
+      <p> Welcome ! The platform allows professionals to
+        ship their merchandise across Europe in just a few clicks.
+        Fill in your shipping need, get a fixed price and receive
+        more than 2,500 quality carriers on this page, you can compute
+        the invoices in a clear and efficient manner </p>
 
-    <h2>Informations </h2>
+      <h2>Informations </h2>
 
-    <h3> Trucker's informations </h3>
-    <div id="trucker" class="info">
-      <p>
-        <label> Trucker name : </label>
-        <input class="name" type="text" placeholder="Trucker name"/>
-      </p>
-      <p>
-        <label> Price by km : </label>
-        <input class="price-by-km" type="number" placeholder="Price by km"/>
-      </p>
-      <p>
-        <label>Price by cubic : </label>
-        <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-      </p>
+      <h3> Trucker's informations </h3>
+      <div id="trucker" class="info">
+        <p>
+          <label> Trucker name : </label>
+          <input class="name" type="text" />
+        </p>
+        <p>
+          <label> Price by km : </label>
+          <input class="price-by-km" type="number" />
+        </p>
+        <p>
+          <label>Price by cubic : </label>
+          <input class="price-by-cubic" type="number" />
+        </p>
+      </div>
+
+
+
+      <h3> Shipper's informations </h3>
+      <div id="shipper" class="info">
+        <p>
+          <label> Shipper name : </label>
+          <input class="name" type="text" />
+        </p>
+        <p>
+          <label> Distance in km : </label>
+          <input class="distance" type="number" />
+        </p>
+        <p>
+          <label> Volume in m3 : </label>
+          <input class="volume" type="number" />
+        </p>
+        <p>
+          <input class="option" type="checkbox"/>
+          <label> Deductible option ? </label>
+        </p>
+      </div>
+
+      <h2> Results </h2>
+      <p> Once you have saved all the information, click on COMPUTE to get the invoice figures. </p>
+      <button id="compute" class="button">COMPUTE</button>
+      <div class="result">
+        <div id="actors"></div>
+        <script src="convargo.js"></script>
+        <script src="index.js"></script>
+      </div>
+
     </div>
-
-
-
-    <h3> Shipper's informations </h3>
-    <div id="shipper" class="info">
-      <p>
-        <label> Shipper name : </label>
-        <input class="name" type="text" placeholder="Shipper name"/>
-      </p>
-      <p>
-        <label> Distance in km : </label>
-        <input class="distance" type="number" placeholder="Distance in km"/>
-      </p>
-      <p>
-        <label> Volume in m3 : </label>
-        <input class="volume" type="number" placeholder="Volume in m3"/>
-      </p>
-      <p>
-        <input class="option" type="checkbox" placeholder="Deductible option"/>
-        <label> Deductible option ? </label>
-      </p>
-    </div>
-
-    <h2> Results </h2>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
